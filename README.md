@@ -1,5 +1,5 @@
 # Altioracorp Solution - Backend
-Esta solución contiene los APIs necesarios para gestionar Clientes, Productos y Órdenes de Clientes.
+Esta solución contiene la lógica y los APIs necesarios para gestionar Clientes, Productos y Órdenes de Clientes.
 
 ### Antes de empezar
 Es importante mencionar que este proyecto funciona conjuntamente con un frontend, por lo que no podrás probarlo sin haber descargado y ejecutado el proyecto ***altioracorp-frontend***. [Ir a Descargar](https://github.com/eddavidva/altioracorp-frontend)
