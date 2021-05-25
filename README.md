@@ -7,7 +7,7 @@ Es importante mencionar que este proyecto funciona conjuntamente con un frontend
 ### Empecemos
 Estas instrucciones te permitirán descargar una copia de la solución y ejecutarla en un ambiente de desarrollo.
 
-### Estructura
+### Estructura (Proyectos)
 * __AltioracorpDataAccess:__ Proyecto con la lógica para el acceso a la información de la base de datos.
 * __AltioracorpWebApi:__ Proyecto con el contenido para la publicación de las APIs.
 
