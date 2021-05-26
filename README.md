@@ -28,7 +28,8 @@ Estas instrucciones te permitirán descargar una copia de la solución y ejecuta
 `<connectionStrings>
     <add name="AltioracorpContext" connectionString="Data Source=EC-NBO0511\SQLEXP2008;Initial Catalog=AltioracorpDB;Integrated Security=True" providerName="System.Data.SqlClient" />
   </connectionStrings>`
-3. Ejecuta la solución.
+3. En el explorador de soluciones de Visual Studio, da click derecho sobre la solución y selecciona la opción ___Restaurar paquetes de NuGet.___
+4. Ejecuta la solución.
 
 ### Herramientas
 * [EntityFramework](https://docs.microsoft.com/en-us/ef/)
