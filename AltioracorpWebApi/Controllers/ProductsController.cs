@@ -70,5 +70,35 @@ namespace AltioracorpWebApi.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, result);
             }
         }
+
+        public async Task<HttpResponseMessage> Put(int id, [FromBody] ProductDTO productDTO)
+        {
+            if (!ModelState.IsValid)
+            {
+                result = responseMessage.BadMessage("Verifique que los datos ingresados sean correctos");
+                return Request.CreateResponse(HttpStatusCode.BadRequest, result);
+            }
+            try
+            {
+                var productDB = await productService.GetById(id);
+                if (productDB == null)
+                {
+                    result = responseMessage.BadMessage("El Producto que desea actualizar no existe");
+                    return Request.CreateResponse(HttpStatusCode.BadRequest, result);
+                }
+
+                var product = mapper.Map<Product>(productDTO);
+                product = await productService.Update(product);
+
+                result = responseMessage.OkMessage("El Producto se ha actualizado correctamente.", product);
+                return Request.CreateResponse(HttpStatusCode.OK, result);
+
+            }
+            catch (Exception ex)
+            {
+                result = responseMessage.ErrorMessage("Hubo un error al momento de actualizar el Producto, contáctese con el administrador.", ex);
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, result);
+            }
+        }
     }
 }

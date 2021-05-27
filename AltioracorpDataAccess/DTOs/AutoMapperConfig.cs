@@ -9,7 +9,7 @@ namespace AltioracorpDataAccess.DTOs
         {
             return new MapperConfiguration(config => {
 
-                // MAPEO AUTOMÁTICO DEL MODELO CLIENTE Y DEL DTO CLIENTE 
+                // MAPEO AUTOMÁTICO DE LOS MODELO Y DE LOS DTOs 
                 config.CreateMap<Client, ClientDTO>();
                 config.CreateMap<ClientDTO, Client>();
 

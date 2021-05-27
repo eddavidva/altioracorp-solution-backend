@@ -15,6 +15,8 @@ namespace AltioracorpDataAccess.Models
         public string Code { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
+
+        public int Stock { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime ModifiedAt { get; set; }
 

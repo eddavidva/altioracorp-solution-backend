@@ -10,8 +10,9 @@ namespace AltioracorpDataAccess.DTOs
         public string Code { get; set; }
         [Required(ErrorMessage = "El nombre del producto es requerido")]
         public string Name { get; set; }
-        public double Price { get; set; }
         [Required(ErrorMessage = "El precio del producto es requerido")]
+        public double Price { get; set; }
+        public int Stock { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime ModifiedAt { get; set; }
     }
